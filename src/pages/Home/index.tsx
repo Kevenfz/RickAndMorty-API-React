@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { personaService } from "../../services/personas";
 import "./style.css";
 
@@ -15,6 +16,7 @@ type Personas = {
 
 const Home = () => {
   const [personas, setPersonas] = useState<Personas[]>([]);
+console.log(personas);
 
   const loadPersonas = async () => {
     const result = await personaService.personasList();
@@ -35,9 +37,10 @@ const Home = () => {
             }.jpeg`}
             alt="Personagem"
           />
-          <h1 className="infos">Name: {perso.name}</h1>
+          <Link to={`/info/${perso.id}`} state={{id: perso.id}}>
+            <h1 className="infos">Name: {perso.name}</h1>
+          </Link>
           <p className="infos">Specie: {perso.species}</p>
-          <p className="infos">Status: {perso.status}</p>
           <p className="infos">Origin: {perso.origin.name}</p>
         </div>
       ))}

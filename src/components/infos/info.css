@@ -1,0 +1,74 @@
+div .Container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div .Card {
+  width: 800px;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 15px;
+  padding: 5px;
+  border-radius:15px;
+  background-color: rgba(137, 43, 226, 0.377);
+
+}
+
+div .Card img {
+  padding: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+div .Card img:hover {
+  transform: scale(1.05);
+}
+
+div .Card-infos {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+div .Card-infos h1:hover {
+  color: #fff;
+}
+
+div .Card-infos p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgba(158, 74, 255, 0.692);
+  border-radius: 6px;
+  line-height: 40px;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+div .Card-infos p:hover {
+  background-color: rgb(94, 5, 195);
+  color: #fff;
+}
+
+.header-logout {
+  position: absolute;
+  left: 27rem;
+  color: #FFF;
+  background-color: rgba(137, 43, 226, 0.377);
+  padding: .5rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.header-logout:hover {
+  transform: scale(0.9);
+  background-color: rgb(94, 5, 195);
+}

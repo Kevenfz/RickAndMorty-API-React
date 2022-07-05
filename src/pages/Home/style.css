@@ -21,13 +21,18 @@ div.card .infos {
 }
 
 div.card .infos:hover {
-    transform: scale(1.1);
-    color: #fff;
+    transform: scale(1.07);
+
 }
 
 div.card .infos p:hover {
     transform: scale(1);
     background-color: rgb(94, 5, 195);
+    color: #fff;
+}
+
+div.card .infos h1:hover {
+    color: #fff;
 }
 
 div.card .infos h1 {
@@ -37,6 +42,7 @@ div.card .infos h1 {
     margin-bottom: 10px;
     background-color: rgba(0, 183, 255, 0.815);
     text-align: center;
+    color: black;
 }
 
 div.card .infos p {

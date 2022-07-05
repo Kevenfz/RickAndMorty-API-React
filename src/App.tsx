@@ -2,7 +2,8 @@ import React from "react";
 import Router from "./router";
 import "./App.css";
 
-function App() {
+export const App = () =>  {
+
   return (
     <div className="container">
       
