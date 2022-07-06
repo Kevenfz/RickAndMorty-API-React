@@ -15,18 +15,17 @@ div .Card {
   padding: 5px;
   border-radius:15px;
   background-color: rgba(137, 43, 226, 0.377);
-
+  box-shadow: -4px 12px 5px 1px rgba(0, 0, 0, 0.599);
 }
 
 div .Card img {
   padding: 7px;
   border-radius: 15px;
-  cursor: pointer;
   transition: all 0.5s;
 }
 
 div .Card img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 div .Card-infos {
@@ -34,7 +33,7 @@ div .Card-infos {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  cursor: pointer;
+  cursor: context-menu;
 }
 
 div .Card-infos h1:hover {
@@ -49,6 +48,7 @@ div .Card-infos p {
   line-height: 40px;
   padding: 5px;
   transition: all 0.5s;
+  cursor: context-menu;
 }
 
 div .Card-infos p:hover {

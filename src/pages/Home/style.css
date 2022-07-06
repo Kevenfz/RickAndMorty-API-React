@@ -16,13 +16,13 @@ div.card .infos {
     padding: 5px;
     border-radius: 6px;
     background-color: rgba(137, 43, 226, 0.377);
-    cursor: pointer;
+    cursor: context-menu;
     transition: all 0.3s;
 }
 
 div.card .infos:hover {
-    transform: scale(1.07);
-
+    transform: scale(1.05);
+    box-shadow: -4px 10px 5px 1px rgba(0, 0, 0, 0.575);
 }
 
 div.card .infos p:hover {
@@ -43,6 +43,7 @@ div.card .infos h1 {
     background-color: rgba(0, 183, 255, 0.815);
     text-align: center;
     color: black;
+    cursor: pointer;
 }
 
 div.card .infos p {
