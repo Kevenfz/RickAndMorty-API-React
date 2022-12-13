@@ -62,7 +62,7 @@ const Infos = () => {
         <div className="Card-infos">
           <h1>
             {" "}
-            <b>Name:</b> {infos.name}
+            <b></b> {infos.name}
           </h1>
           <p>
             {" "}

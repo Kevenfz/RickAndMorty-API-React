@@ -97,6 +97,11 @@ div .Card-infos p:hover {
     font-size: 1rem;
     font-weight: bold;
   }
+  
+  div .Card-infos h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
 
   div .Card-infos p {
     width: 100%;
@@ -122,7 +127,7 @@ div .Card-infos p:hover {
   }
 
   div .Card-infos h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
 
@@ -159,7 +164,7 @@ div .Card-infos p:hover {
   }
 
   div .Card-infos h1 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     margin-top: 0.1rem;
     margin-bottom: 0.3rem;
     font-weight: bold;
