@@ -178,6 +178,7 @@ div .Card-infos p:hover {
     position: absolute;
     top: 44rem;
     left: 50%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -186,5 +187,6 @@ div .Card-infos p:hover {
     position: absolute;
     top: 54rem;
     left: 47%;
+    margin-bottom: 1rem;
   }
 }
