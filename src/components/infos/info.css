@@ -6,34 +6,42 @@ div .Container {
 }
 
 div .Card {
-  width: 800px;
-  height: 370px;
+  width: 830px;
+  height: 390px;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  justify-content: space-around;
+  padding: 10px;
   font-size: 15px;
-  padding: 5px;
-  border-radius:15px;
+  border-radius: 15px;
   background-color: rgba(137, 43, 226, 0.377);
   box-shadow: -4px 12px 5px 1px rgba(0, 0, 0, 0.599);
+  box-sizing: border-box;
 }
 
 div .Card img {
-  padding: 7px;
+  width: 20rem;
+  height: 21rem;
+  /* padding: 2px; */
   border-radius: 15px;
   transition: all 0.5s;
 }
 
 div .Card img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 div .Card-infos {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   cursor: context-menu;
+}
+
+div .Card-infos h1 {
+  font-size: 2rem;
+  color: #fff;
 }
 
 div .Card-infos h1:hover {
@@ -41,6 +49,7 @@ div .Card-infos h1:hover {
 }
 
 div .Card-infos p {
+  width: 100%;
   font-size: 1.2rem;
   font-weight: 500;
   background-color: rgba(158, 74, 255, 0.692);
@@ -59,16 +68,123 @@ div .Card-infos p:hover {
 .header-logout {
   position: absolute;
   left: 27rem;
-  color: #FFF;
+  color: #fff;
   background-color: rgba(137, 43, 226, 0.377);
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 3rem;
   border-radius: 50%;
   cursor: pointer;
-  transition: .3s all;
+  transition: 0.3s all;
 }
 
 .header-logout:hover {
   transform: scale(0.9);
   background-color: rgb(94, 5, 195);
+}
+
+@media (max-width: 1280px) {
+  div .Card {
+    width: 760px;
+    height: 370px;
+  }
+
+  div .Card img {
+    width: 19rem;
+    height: 21rem;
+  }
+
+  div .Card-infos {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  div .Card-infos p {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  div .Card {
+    width: 700px;
+    height: 380px;
+    padding: 3px;
+  }
+
+  div .Card img {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  div .Card-infos {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  div .Card-infos h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  div .Card-infos p {
+    width: 100%;
+    font-size: .93rem;
+  }
+}
+
+@media (max-width: 767px) {
+  div .Card {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 650px;
+    padding: 10px;
+    margin-bottom: 1rem;
+  }
+
+  div .Card img {
+    width: 15rem;
+    height: 14rem;
+  }
+
+  div .Card-infos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  div .Card-infos h1 {
+    font-size: 1.5rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+
+  div .Card-infos p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+}
+
+@media (max-width: 1750px) {
+  .header-logout {
+    position: absolute;
+    top: 44rem;
+    left: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-logout {
+    position: absolute;
+    top: 54rem;
+    left: 47%;
+  }
 }

@@ -17,7 +17,7 @@ body,
 }
 
 body {
-  background: #000 url(./assets/background.png) no-repeat ;
+  background: #000 url(./assets/background.png) no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
   background-position: bottom;
@@ -42,11 +42,19 @@ div.container {
 }
 
 div.logo {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: logo;
+}
+
+@media (max-width: 520px) {
+  .logo1 {
+    width: 100%;
+    margin: auto;
+    padding: .5rem;
+  }
 }
 
 div.content {

@@ -1,59 +1,62 @@
 div.card {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 55px;
-    padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 div.card .infos {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    padding: 5px;
-    border-radius: 6px;
-    background-color: rgba(137, 43, 226, 0.377);
-    cursor: context-menu;
-    transition: all 0.3s;
+  width: 17rem;
+  /* height: 10rem; */
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(137, 43, 226, 0.377);
+  cursor: context-menu;
+  transition: all 0.3s;
+  box-sizing: border-box;
 }
 
 div.card .infos:hover {
-    transform: scale(1.05);
-    box-shadow: -4px 10px 5px 1px rgba(0, 0, 0, 0.575);
+  transform: scale(1.05);
+  box-shadow: -4px 10px 5px 1px rgba(0, 0, 0, 0.575);
 }
 
 div.card .infos p:hover {
-    transform: scale(1);
-    background-color: rgb(94, 5, 195);
-    color: #fff;
+  transform: scale(1);
+  background-color: rgb(94, 5, 195);
+  color: #fff;
 }
 
 div.card .infos h1:hover {
-    color: #fff;
+  color: #fff;
 }
 
 div.card .infos h1 {
-    width: 100%;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(0, 183, 255, 0.815);
-    text-align: center;
-    color: black;
-    cursor: pointer;
+  width: 100%;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 183, 255, 0.815);
+  text-align: center;
+  color: black;
+  cursor: pointer;
 }
 
 div.card .infos p {
-    width: 100%;
-    margin-bottom: 3px;
-    background-color: rgba(158, 74, 255, 0.692);
-    font-weight: bold;
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: rgba(158, 74, 255, 0.692);
+  font-weight: bold;
 }
 
 div.infos img {
-    border-radius: 6px;
-    width: 100%;
+  border-radius: 6px;
+  width: 100%;
 }

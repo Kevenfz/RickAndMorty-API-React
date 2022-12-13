@@ -8,7 +8,7 @@ export const App = () =>  {
     <div className="container">
       
       <div className="logo">
-        <img src={require("./assets/logo.png")} alt="Logo RaM"/>
+        <img className="logo1" src={require("./assets/logo.png")} alt="Logo RaM"/>
       </div>
       
       <div className="content">
