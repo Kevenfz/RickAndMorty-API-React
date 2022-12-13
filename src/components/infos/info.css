@@ -190,7 +190,7 @@ div .Card-infos p:hover {
 @media (max-width: 767px) {
   .header-logout {
     position: absolute;
-    top: 54rem;
+    top: 53rem;
     left: 47%;
     margin-bottom: 1rem;
   }
